@@ -1,10 +1,10 @@
 FROM ubuntu:14.04
 
 RUN apt-get update
-
+RUN apt-get install -y python-dev
 RUN apt-get install -y git
-CMD pip install fabric
-RUN fab
+RUN apt-get install -y python-pip
+RUN pip install fabric
 
 RUN mkdir /root/.ssh/
 
@@ -21,4 +21,3 @@ RUN git clone git@github.com:ambikads/kiosk.git
 
 RUN cd kiosk/setup/scripts
 
-RUN fab
