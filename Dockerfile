@@ -2,9 +2,11 @@ FROM ubuntu:14.04
 
 RUN apt-get update
 RUN apt-get install -y python-dev
-
+RUN apt-get install -y python-pip
+RUN apt-get install -y python-yaml
+RUN apt-get install -y python-keyring
 RUN apt-get install -y git
-CMD pip install fabric
+RUN pip install fabric
 
 RUN mkdir /root/.ssh/
 
