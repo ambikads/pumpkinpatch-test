@@ -16,4 +16,4 @@ WORKDIR /kiosk
 
 RUN git remote add upstream git@github.com:keyme/kiosk.git
 
-VOLUME ["/kiosk"]
+VOLUME ["/kiosk/setup/scripts"]

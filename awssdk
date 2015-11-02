@@ -1,0 +1,11 @@
+require "aws-sdk"
+
+ecs = Aws::ECS::Client.new({region: 'us-west-2'})
+
+ecs.list_task_definitions
+
+ecs.run_task({cluster: "default", task_definition: "console-sample-app-static-ambika"})
+
+to override a command
+ecs.run_task({cluster: "default", task_definition: "fab_test_2cont:12", overrides: {container_overrides: [{ name: "base", command: ["fab fm:10 wtf"]}]} })
+
