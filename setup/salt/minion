@@ -1,0 +1,7 @@
+log_level: debug
+file_client: local
+
+file_roots:
+  base:
+    - /rundeck/setup/salt/
+
