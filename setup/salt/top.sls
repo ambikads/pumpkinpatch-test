@@ -1,4 +1,5 @@
 base:
   '*':
-    - rundeck-server
+    - rundeck-user
+    - rundeck-install
 
