@@ -1,6 +1,9 @@
-openjdk-7-jdk:
-  pkg:
-    - installed
+rundeck-pkgs:
+  pkg.installed:
+    - pkgs:
+      - openjdk-7-jdk
+      - jq
+      - mailutils
 
 download-rundeck:
   file.managed:
@@ -13,10 +16,6 @@ install-rundeck:
     - name : dpkg -i /tmp/rundeck-2.6.1-1-GA.deb
     - require :
         - file: download-rundeck
-
-jq:
-  pkg:
-    - installed
 
 rundeckd:
   service.running: []

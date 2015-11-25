@@ -3,5 +3,5 @@ file_client: local
 
 file_roots:
   base:
-    - /home/vagrant/pumpkinpatch-test/setup/salt/
+    - /home/rundeck/pumpkinpatch-test/setup/salt/
 
