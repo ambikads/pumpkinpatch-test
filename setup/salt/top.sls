@@ -1,4 +1,0 @@
-base:
-  '*':
-    - rundeck-install
-
