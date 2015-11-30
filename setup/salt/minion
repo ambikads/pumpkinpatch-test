@@ -1,7 +1,0 @@
-log_level: debug
-file_client: local
-
-file_roots:
-  base:
-    - /home/rundeck/pumpkinpatch-test/setup/salt/
-
